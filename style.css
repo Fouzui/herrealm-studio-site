@@ -547,7 +547,7 @@ h3 {
   }
 
   .founder-card h2 {
-    font-size: clamp(2rem, 11vw, 3rem);
+    font-size: clamp(2rem, 9vw, 2.6rem);
   }
 }
 
