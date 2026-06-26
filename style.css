@@ -630,51 +630,43 @@ h3 {
     flex-direction: column;
   }
 }
-/* Hero title — subtle amethyst-gold hover */
+/* Hero title — refined hover, no hard gradient flash */
 .hero h1 {
   display: inline-block;
   position: relative;
   width: fit-content;
   transition:
     transform 260ms ease,
+    color 260ms ease,
     filter 260ms ease,
-    text-shadow 260ms ease,
-    color 260ms ease;
+    text-shadow 260ms ease;
 }
 
 .hero h1:hover {
-  transform: translateY(-6px);
-  background: linear-gradient(
-    110deg,
-    var(--ink) 0%,
-    var(--deep-purple) 35%,
-    var(--purple) 62%,
-    var(--gold) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  filter: drop-shadow(0 16px 28px rgba(111, 74, 168, 0.14));
-  text-shadow: 0 0 26px rgba(183, 155, 101, 0.12);
+  transform: translateY(-5px);
+  color: var(--deep-purple);
+  filter: drop-shadow(0 16px 28px rgba(111, 74, 168, 0.12));
+  text-shadow:
+    0 0 22px rgba(183, 164, 216, 0.16),
+    0 0 34px rgba(183, 155, 101, 0.08);
+}
+
+.hero h1 span {
+  transition:
+    color 260ms ease,
+    text-shadow 260ms ease;
 }
 
 .hero h1:hover span {
-  background: linear-gradient(
-    90deg,
-    var(--purple),
-    var(--gold)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--purple);
+  text-shadow: 0 0 18px rgba(183, 155, 101, 0.12);
 }
 
 /* Mobile tap feedback */
 .hero h1:active {
   transform: translateY(-3px) scale(0.995);
 }
-
-/* Header brand — refined hover */
+/* Header brand — refined hover, no gradient flash */
 .brand {
   transition:
     transform 220ms ease,
@@ -687,15 +679,7 @@ h3 {
 }
 
 .brand:hover .brand-text {
-  background: linear-gradient(
-    90deg,
-    var(--deep-purple),
-    var(--purple),
-    var(--gold)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--deep-purple);
 }
 
 .brand:hover .brand-mark {
