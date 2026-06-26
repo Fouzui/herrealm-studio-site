@@ -630,3 +630,78 @@ h3 {
     flex-direction: column;
   }
 }
+/* Hero title — subtle amethyst-gold hover */
+.hero h1 {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  transition:
+    transform 260ms ease,
+    filter 260ms ease,
+    text-shadow 260ms ease,
+    color 260ms ease;
+}
+
+.hero h1:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(
+    110deg,
+    var(--ink) 0%,
+    var(--deep-purple) 35%,
+    var(--purple) 62%,
+    var(--gold) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 16px 28px rgba(111, 74, 168, 0.14));
+  text-shadow: 0 0 26px rgba(183, 155, 101, 0.12);
+}
+
+.hero h1:hover span {
+  background: linear-gradient(
+    90deg,
+    var(--purple),
+    var(--gold)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Mobile tap feedback */
+.hero h1:active {
+  transform: translateY(-3px) scale(0.995);
+}
+
+/* Header brand — refined hover */
+.brand {
+  transition:
+    transform 220ms ease,
+    filter 220ms ease;
+}
+
+.brand:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 10px 20px rgba(111, 74, 168, 0.12));
+}
+
+.brand:hover .brand-text {
+  background: linear-gradient(
+    90deg,
+    var(--deep-purple),
+    var(--purple),
+    var(--gold)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand:hover .brand-mark {
+  border-color: rgba(183, 155, 101, 0.75);
+  color: var(--deep-purple);
+  box-shadow:
+    0 0 0 4px rgba(183, 164, 216, 0.12),
+    0 12px 28px rgba(111, 74, 168, 0.14);
+}
