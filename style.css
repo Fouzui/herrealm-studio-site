@@ -630,25 +630,25 @@ h3 {
     flex-direction: column;
   }
 }
-/* Hero title — refined hover, no hard gradient flash */
+/* Hero title — refined hover, no clipped glow */
 .hero h1 {
   display: inline-block;
   position: relative;
   width: fit-content;
+  padding: 0.08em 0.12em 0.08em 0.04em;
+  margin-left: -0.04em;
   transition:
     transform 260ms ease,
     color 260ms ease,
-    filter 260ms ease,
     text-shadow 260ms ease;
 }
 
 .hero h1:hover {
   transform: translateY(-5px);
   color: var(--deep-purple);
-  filter: drop-shadow(0 16px 28px rgba(111, 74, 168, 0.12));
   text-shadow:
-    0 0 22px rgba(183, 164, 216, 0.16),
-    0 0 34px rgba(183, 155, 101, 0.08);
+    0 0 16px rgba(183, 164, 216, 0.12),
+    0 8px 28px rgba(183, 155, 101, 0.07);
 }
 
 .hero h1 span {
