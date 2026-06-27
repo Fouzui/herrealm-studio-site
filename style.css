@@ -191,7 +191,8 @@ a {
   min-height: 86vh;
   display: grid;
   align-content: center;
-  overflow: hidden;
+  overflow: clip;
+  overflow-clip-margin: 4rem;
 }
 
 .hero::before {
