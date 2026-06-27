@@ -836,7 +836,7 @@ h3 {
     font-size: 1.05rem;
   }
 }
-/* Mobile hero clipping fix — keep circles on the right, no horizontal overflow */
+/* Mobile hero clipping fix — keep circles visible on the right */
 html,
 body {
   overflow-x: hidden;
@@ -851,13 +851,13 @@ body {
   }
 
   .hero::before {
-    right: -3rem;
+    right: 0.8rem;
     left: auto;
     top: 16%;
   }
 
   .hero::after {
-    right: 1.5rem;
+    right: 2.4rem;
     left: auto;
     top: 28%;
   }
