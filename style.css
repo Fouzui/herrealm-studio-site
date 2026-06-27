@@ -804,3 +804,100 @@ body::before {
     radial-gradient(circle at 20% 20%, rgba(255, 250, 242, 0.45), transparent 18rem),
     radial-gradient(circle at 80% 30%, rgba(183, 164, 216, 0.08), transparent 22rem);
 }
+/* Glass highlight line */
+.project-card::after,
+.founder-card::after,
+.craft-grid article::after,
+.contact::after {
+  content: "";
+  position: absolute;
+  left: 1.2rem;
+  right: 1.2rem;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.82),
+    rgba(183, 164, 216, 0.35),
+    transparent
+  );
+  pointer-events: none;
+}
+
+.founder-card,
+.craft-grid article,
+.contact {
+  position: relative;
+  overflow: hidden;
+}
+/* Hero entrance detail */
+.hero .eyebrow {
+  position: relative;
+}
+
+.hero .eyebrow::before {
+  content: "";
+  position: absolute;
+  left: -2.2rem;
+  top: 50%;
+  width: 1.4rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+/* Project archive feel */
+.project-card {
+  isolation: isolate;
+}
+
+.project-card::before {
+  text-shadow:
+    0 1px 0 rgba(255, 250, 242, 0.45),
+    0 12px 32px rgba(111, 74, 168, 0.08);
+}
+/* Refined CTA */
+.button.primary {
+  box-shadow:
+    0 14px 34px rgba(111, 74, 168, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.24);
+}
+
+.button.primary:hover {
+  box-shadow:
+    0 18px 42px rgba(111, 74, 168, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.button.ghost {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+/* Restore stronger purple glow for project and contact cards */
+.project-card {
+  background:
+    radial-gradient(circle at 88% 18%, rgba(183, 164, 216, 0.26), transparent 18rem),
+    linear-gradient(
+      135deg,
+      rgba(255, 250, 242, 0.78),
+      rgba(244, 239, 231, 0.48)
+    ),
+    radial-gradient(
+      circle at 18% 0%,
+      rgba(183, 164, 216, 0.16),
+      transparent 16rem
+    );
+}
+
+.contact {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(183, 164, 216, 0.32), transparent 20rem),
+    linear-gradient(
+      135deg,
+      rgba(255, 250, 242, 0.78),
+      rgba(244, 239, 231, 0.48)
+    ),
+    radial-gradient(
+      circle at 18% 0%,
+      rgba(183, 164, 216, 0.14),
+      transparent 16rem
+    );
+}
