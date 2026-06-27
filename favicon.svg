@@ -1,0 +1,20 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="64" fill="#fffaf2"/>
+
+  <circle cx="128" cy="128" r="86" fill="none" stroke="#6f4aa8" stroke-width="4"/>
+  <circle cx="128" cy="128" r="68" fill="none" stroke="#b79b65" stroke-width="2" opacity="0.65"/>
+
+  <path d="M128 32C156 72 196 91 224 94C188 110 165 139 128 224C91 139 68 110 32 94C60 91 100 72 128 32Z"
+        fill="none"
+        stroke="#24172f"
+        stroke-width="2.5"
+        opacity="0.2"/>
+
+  <text x="128" y="141"
+        text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="48"
+        font-weight="700"
+        letter-spacing="2"
+        fill="#24172f">HRS</text>
+</svg>
