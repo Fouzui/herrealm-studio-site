@@ -733,3 +733,7 @@ h2 [data-lang="en"] {
   font-size: clamp(2.1rem, 3.6vw, 3rem);
   line-height: 1.08;
 }
+/* Founder anchor offset */
+#founder {
+  scroll-margin-top: 8rem;
+}
