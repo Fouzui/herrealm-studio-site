@@ -815,3 +815,24 @@ h3 {
     flex-direction: column;
   }
 }
+/* Mobile about section layout */
+@media (max-width: 760px) {
+  #about.split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  #about h2 {
+    max-width: none;
+  }
+
+  #about h2 [data-lang="zh"] {
+    font-size: clamp(2.15rem, 9vw, 2.55rem);
+    line-height: 1.12;
+    white-space: nowrap;
+  }
+
+  #about .text-block {
+    font-size: 1.05rem;
+  }
+}
