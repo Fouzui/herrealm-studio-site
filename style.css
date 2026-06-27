@@ -751,3 +751,39 @@ h2 [data-lang="en"] {
   letter-spacing: 0.08em;
   font-weight: 800;
 }
+/* Refined surface details */
+.project-card,
+.founder-card,
+.craft-grid article,
+.contact {
+  border-color: rgba(111, 74, 168, 0.18);
+  box-shadow:
+    0 24px 70px rgba(25, 20, 18, 0.10),
+    inset 0 1px 0 rgba(255, 250, 242, 0.65);
+}
+
+/* Subtle title depth */
+h1,
+h2 {
+  text-shadow:
+    0 1px 0 rgba(255, 250, 242, 0.45),
+    0 10px 34px rgba(183, 155, 101, 0.06);
+}
+
+/* Project meta realm detail */
+.project-meta {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-meta::after {
+  content: "";
+  position: absolute;
+  right: -2.5rem;
+  top: -2.5rem;
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid rgba(183, 155, 101, 0.22);
+  border-radius: 50%;
+  pointer-events: none;
+}
