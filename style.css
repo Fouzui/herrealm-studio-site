@@ -872,32 +872,25 @@ body {
     z-index: 2;
   }
 }
-/* Mobile CTA glow fix */
+/* Mobile CTA shadow fix */
 @media (max-width: 760px) {
   .hero-actions {
-    padding-left: 0.35rem;
-    padding-bottom: 1.6rem;
     overflow: visible;
+    padding-left: 0.25rem;
+    padding-bottom: 1rem;
   }
 
   .button.primary {
-    position: relative;
-    z-index: 1;
     box-shadow:
+      0 10px 22px rgba(111, 74, 168, 0.16),
+      0 18px 34px rgba(111, 74, 168, 0.08),
       inset 0 1px 0 rgba(255, 255, 255, 0.24);
   }
 
-  .button.primary::before {
-    content: "";
-    position: absolute;
-    inset: -0.6rem -0.7rem -0.9rem -0.7rem;
-    z-index: -1;
-    border-radius: inherit;
-    background: radial-gradient(
-      ellipse at 50% 65%,
-      rgba(111, 74, 168, 0.22),
-      transparent 68%
-    );
-    pointer-events: none;
+  .button.primary:hover {
+    box-shadow:
+      0 12px 26px rgba(111, 74, 168, 0.18),
+      0 20px 38px rgba(111, 74, 168, 0.09),
+      inset 0 1px 0 rgba(255, 255, 255, 0.28);
   }
 }
