@@ -836,7 +836,7 @@ h3 {
     font-size: 1.05rem;
   }
 }
-/* Mobile hero clipping fix */
+/* Mobile hero clipping fix — keep circles on the right */
 @media (max-width: 760px) {
   .hero {
     overflow: visible;
@@ -845,14 +845,15 @@ h3 {
   }
 
   .hero::before {
-    left: -5rem;
-    right: auto;
-    top: 4.5rem;
+    right: -4rem;
+    left: auto;
+    top: 16%;
   }
 
   .hero::after {
-    right: -2.8rem;
-    top: 11rem;
+    right: 2rem;
+    left: auto;
+    top: 28%;
   }
 
   .hero-actions {
