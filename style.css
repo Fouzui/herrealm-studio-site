@@ -724,3 +724,12 @@ h2 [data-lang="en"] {
   font-size: clamp(2rem, 3.7vw, 3.1rem);
   line-height: 1.05;
 }
+.founder-card h2 [data-lang="en"] {
+  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+  line-height: 1.05;
+}
+
+.founder-card h2 [data-lang="zh"] {
+  font-size: clamp(2.1rem, 3.6vw, 3rem);
+  line-height: 1.08;
+}
