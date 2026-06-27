@@ -836,3 +836,32 @@ h3 {
     font-size: 1.05rem;
   }
 }
+/* Mobile hero clipping fix */
+@media (max-width: 760px) {
+  .hero {
+    overflow: visible;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero::before {
+    left: -5rem;
+    right: auto;
+    top: 4.5rem;
+  }
+
+  .hero::after {
+    right: -2.8rem;
+    top: 11rem;
+  }
+
+  .hero-actions {
+    overflow: visible;
+    padding-bottom: 1.2rem;
+  }
+
+  .button {
+    position: relative;
+    z-index: 2;
+  }
+}
