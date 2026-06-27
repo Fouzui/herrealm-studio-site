@@ -697,8 +697,8 @@ h3 {
 }
 
 .tag {
-  font-size: 0.82rem;
-  letter-spacing: 0.16em;
+  font-size: 0.86rem;
+  letter-spacing: 0.18em;
   font-weight: 800;
 }
 /* English h2 refinement */
@@ -736,4 +736,18 @@ h2 [data-lang="en"] {
 /* Founder anchor offset */
 #founder {
   scroll-margin-top: 8rem;
+}
+/* Small label sizing */
+.section-kicker,
+.eyebrow,
+.project-meta span {
+  font-size: 0.86rem;
+  letter-spacing: 0.18em;
+  font-weight: 800;
+}
+
+.project-meta strong {
+  font-size: 0.86rem;
+  letter-spacing: 0.08em;
+  font-weight: 800;
 }
