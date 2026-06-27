@@ -701,3 +701,26 @@ h3 {
   letter-spacing: 0.16em;
   font-weight: 800;
 }
+/* English h2 refinement */
+h2 [data-lang="en"] {
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.05;
+}
+
+/* About title refinement */
+#about.split {
+  grid-template-columns: 1fr 1fr;
+}
+
+#about h2 {
+  max-width: 9.5em;
+}
+
+#about h2 [data-lang="zh"] {
+  line-height: 1.12;
+}
+
+#about h2 [data-lang="en"] {
+  font-size: clamp(2rem, 3.7vw, 3.1rem);
+  line-height: 1.05;
+}
