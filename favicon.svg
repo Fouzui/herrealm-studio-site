@@ -1,19 +1,19 @@
 <svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
   <rect width="256" height="256" rx="64" fill="#fffaf2"/>
 
-  <circle cx="128" cy="128" r="96" fill="none" stroke="#6f4aa8" stroke-width="6"/>
-  <circle cx="128" cy="128" r="76" fill="none" stroke="#b79b65" stroke-width="3.5" opacity="0.75"/>
+  <circle cx="128" cy="128" r="100" fill="none" stroke="#6f4aa8" stroke-width="6.5"/>
+  <circle cx="128" cy="128" r="82" fill="none" stroke="#b79b65" stroke-width="4" opacity="0.78"/>
 
-  <path d="M128 28C156 66 198 89 228 92C190 110 166 142 128 228C90 142 66 110 28 92C58 89 100 66 128 28Z"
+  <path d="M128 24C157 62 201 88 232 91C192 110 167 144 128 232C89 144 64 110 24 91C55 88 99 62 128 24Z"
         fill="none"
         stroke="#24172f"
-        stroke-width="4"
+        stroke-width="4.2"
         opacity="0.24"/>
 
-  <text x="128" y="148"
+  <text x="128" y="151"
         text-anchor="middle"
         font-family="Georgia, 'Times New Roman', serif"
-        font-size="60"
+        font-size="66"
         font-weight="700"
         letter-spacing="2"
         fill="#24172f">HRS</text>
