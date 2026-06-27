@@ -776,14 +776,6 @@ h2 [data-lang="en"] {
   -webkit-backdrop-filter: blur(18px);
 }
 
-/* Subtle title depth */
-h1,
-h2 {
-  text-shadow:
-    0 1px 0 rgba(255, 250, 242, 0.45),
-    0 10px 34px rgba(183, 155, 101, 0.06);
-}
-
 /* Project meta realm detail */
 .project-meta {
   position: relative;
